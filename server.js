@@ -3,8 +3,10 @@ const mongoose = require("mongoose");
 const path = require("path");
 const bodyParser = require("body-parser");
 const items = require('./routes/api/items');
+const users = require('./routes/api/users')
 const app = express();
 
+app.use(bodyParser.urlencoded({ extended: false}));
 app.use(bodyParser.json());
 
 //Mongo db URI key
@@ -18,6 +20,7 @@ mongoose
 
 // Routes
 app.use('/api/items', items);
+app.use('/api/users', users);
 
 // Serve static assets when in production environment
 if(process.env.NODE_ENV === "production"){
