@@ -1,7 +1,7 @@
 # Grocery Guide!
 
 > An MERN stack application for keeping track of a grocery list  
-> This app was built over the course of one week and still has some bugs and missing functionality. List items can be created and deleted, but not updated(changing an existing item without creating a new one). Users can be created and authenticated upon login but the app does not yet render only the items associated with that user. Form validations are implemented but do not yet render in react for the user to see(these validation errors are sent as responses and can be viewed in the console though). Tests are being written but are not currently included in this repo.
+> This app was built over the course of one week and still has some bugs and missing functionality. Because of time constraints(my first time building a full stack application, working with the mern stack, and using mongoDB) list items can be created and deleted, but not updated(changing an existing item without creating a new one). Users can be created and authenticated upon login but the app does not yet render only the items associated with that user. Form validations are implemented but do not yet render in react for the user to see(these validation errors are sent as responses and can be viewed in the console though). Tests are being written but are not currently included in this repo.
 
 
 
