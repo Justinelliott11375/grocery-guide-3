@@ -9,22 +9,36 @@
 
 - This app requires node(it is built with v9.6.1).  
 - This app requires the following packages in the front end(react) package.json:   
-    axios: version 0.18.0,
-    bootstrap: version 4.1.3,
-    classnames: version 2.2.6,
-    jwt-decode: version 2.2.0,
-    prop-types: version 15.6.2,
-    react: version 16.6.3,
-    react-dom: version 16.6.3,
-    react-redux: version 5.1.1,
-    react-router: version 4.3.1,
-    react-router-dom: version 4.3.1,
-    react-scripts: version 2.1.1,
-    react-transition-group: version 2.5.0,
-    reactstrap: version 6.5.0,
-    redux: version 4.0.1,
-    redux-thunk: version 2.3.0,
-    uuid": version 3.3.2
+    - axios: version 0.18.0,
+    - bootstrap: version 4.1.3,
+    - classnames: version 2.2.6,
+    - jwt-decode: version 2.2.0,
+    - prop-types: version 15.6.2,
+    - react: version 16.6.3,
+    - react-dom: version 16.6.3,
+    - react-redux: version 5.1.1,
+    - react-router: version 4.3.1,
+    - react-router-dom: version 4.3.1,
+    - react-scripts: version 2.1.1,
+    - react-transition-group: version 2.5.0,
+    - reactstrap: version 6.5.0,
+    - redux: version 4.0.1,
+    - redux-thunk: version 2.3.0,
+    - uuid": version 3.3.2
+- This app requires the following packages in the back end(node) package.json(note: nodemon is included as a devdependency for live reloading but is not necesary):
+    bcrypt: version 3.0.2
+    body-parser: version 1.18.3
+    concurrently: version 4.0.1
+    dotenv: version 6.1.0
+    express: version 4.16.4
+    jsonwebtoken: version 8.4.0
+    mongoose: version 5.3.12
+    passport: version 0.4.0
+    passport-jwt: version 4.0.0
+    uuid: version 3.3.2
+    validator: version 10.9.0
+    nodemon: version 1.18.6
+  }
 ### Clone
 
 - Clone this repo to your local machine using `https://github.com/Justinelliott11375/grocery-guide-3/`
@@ -33,20 +47,19 @@
 
 - After cloning the repo, in the app's root directory run `npm install` to install server-side dependencies.
 - Then run `npm run client-install` to install client-side dependencies.
-- Next create a file in the root directory call `.env` and add the following lines to it:
+- Next create a file in the root directory called `.env` and add the following line to it:
+    `SECRET_OR_KEY="webTokenKey"`
+- To run only the client side(react) app, use `npm run client`(this runs on port 3000)
+- To run only the server side(node) app, use `npm run server`(this runs on port 5000)
+- To run both apps/servers concurrently, use `npm run dev`(this runs on ports 3000 and 5000 with proxy)
 
-- To run/test the app, create a .env file in the main directory and add the following line to it:  
-cookieSecret="SECRET1"
-Run `npm start` in the command line and the server should start at address `localhost:3000`
 
 ## Features
 
 - creating a user account  
 - Signing in as an existing user
-- creating a recipe list 
-- creating recipe cards for recipe lists
-- editing/updating/deleting recipe cards and/or lists
-- signing out of the user account
+- adding items to grocery list 
+- removing items from grocery list
 
 ## Tests (Optional)
 
@@ -54,7 +67,7 @@ Run `npm start` in the command line and the server should start at address `loca
 
 ## Technologies
 
-- JavaScript(ES6), node, npm, postgres
+- JavaScript(ES6), node, react, mongoDB, jasmine
 
 ---
 
