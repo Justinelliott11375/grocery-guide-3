@@ -30,8 +30,10 @@ class ItemModal extends Component {
 
   onSubmit = e => {
     e.preventDefault();
+    console.log(this.props);
     const newItem = {
-      name: this.state.name
+      name: this.state.name,
+      //userId: this.state.auth.user.id
     };
 
     // Add item with addItem action(from imported ItemActions)

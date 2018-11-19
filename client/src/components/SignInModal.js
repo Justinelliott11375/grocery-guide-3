@@ -14,7 +14,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { loginUser } from '../actions/userActions';
 
-class SignUpModal extends Component {
+class SignInModal extends Component {
   state = {
     modal: false,
     username: '',
@@ -100,8 +100,8 @@ class SignUpModal extends Component {
   }
 }
 
-SignUpModal.propTypes = {
-    registerUser: PropTypes.func.isRequired,
+SignInModal.propTypes = {
+    loginUser: PropTypes.func.isRequired,
     auth: PropTypes.object.isRequired,
     errors: PropTypes.object.isRequired
   };
@@ -113,4 +113,4 @@ const mapStateToProps = state => ({
 export default connect(
   mapStateToProps,
   { loginUser }
-)(SignUpModal);
+)(SignInModal);
