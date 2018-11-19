@@ -1,44 +1,63 @@
-# grocery-guide-3
-grocery list app utilizing the MERN stack
-## Available Scripts
+# Grocery Guide!
 
-In the project directory, you can run:
+> An MERN stack application for keeping track of a grocery list  
+> This app was built over the course of one week and still has some bugs and missing functionality. List items can be created and deleted, but not updated(changing an existing item without creating a new one). Users can be created and authenticated upon login but the app does not yet render only the items associated with that user. Form validations are implemented but do not yet render in react for the user to see(these validation errors are sent as responses and can be viewed in the console though). Tests are being written but are not currently included in this repo.
 
-### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Installation
 
-### `npm test`
+- This app requires node(it is built with v9.6.1).  
+- This app requires the following packages in the front end(react) package.json:   
+    axios: version 0.18.0,
+    bootstrap: version 4.1.3,
+    classnames: version 2.2.6,
+    jwt-decode: version 2.2.0,
+    prop-types: version 15.6.2,
+    react: version 16.6.3,
+    react-dom: version 16.6.3,
+    react-redux: version 5.1.1,
+    react-router: version 4.3.1,
+    react-router-dom: version 4.3.1,
+    react-scripts: version 2.1.1,
+    react-transition-group: version 2.5.0,
+    reactstrap: version 6.5.0,
+    redux: version 4.0.1,
+    redux-thunk: version 2.3.0,
+    uuid": version 3.3.2
+### Clone
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Clone this repo to your local machine using `https://github.com/Justinelliott11375/grocery-guide-3/`
 
-### `npm run build`
+### Setup
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- After cloning the repo, in the app's root directory run `npm install` to install server-side dependencies.
+- Then run `npm run client-install` to install client-side dependencies.
+- Next create a file in the root directory call `.env` and add the following lines to it:
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+- To run/test the app, create a .env file in the main directory and add the following line to it:  
+cookieSecret="SECRET1"
+Run `npm start` in the command line and the server should start at address `localhost:3000`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Features
 
-### `npm run eject`
+- creating a user account  
+- Signing in as an existing user
+- creating a recipe list 
+- creating recipe cards for recipe lists
+- editing/updating/deleting recipe cards and/or lists
+- signing out of the user account
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Tests (Optional)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- This app uses jasmine test suites for testing. With jasmine installed you can run all tests from the command line with `npm test`
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Technologies
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- JavaScript(ES6), node, npm, postgres
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Author
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+> Justin Elliott
