@@ -73,4 +73,8 @@
 
 ## Author
 
+<<<<<<< HEAD
 > Justin Elliott
+=======
+> Justin Elliott
+>>>>>>> 23390137ff717a5a5a5e4d70fbdee5f2b81b9221
